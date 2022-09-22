@@ -10,7 +10,7 @@ class App extends React.Component {
             <div>
                 <button onClick={this.increment}>+1</button>
                 <h2>{this.state.count}</h2>
-                <GrandParent />
+                <GrandParent count={this.state.count}/>
                 <GrandParent />
             </div>
         );

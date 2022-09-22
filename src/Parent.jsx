@@ -1,7 +1,7 @@
 import React from "react";
 import Child from "./Child.jsx";
 
-class Parent extends React.Component {
+class Parent extends React.PureComponent {
     render() {
         console.log("[ ]   [👩🏼‍⚕️]   [ ]   [ ] rendered");
         return (

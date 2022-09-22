@@ -1,10 +1,7 @@
 import React from "react";
 import Parent from "./Parent.jsx";
 
-class GrandParent extends React.Component {
-    shouldComponentUpdate(nextProps, nextState) {
-        nextProps.count === this.props.count ? false : true
-    };
+class GrandParent extends React.PureComponent {
     render() {
         console.log("[👴🏼]   [ ]   [ ]   [ ] rendered")
         return (
